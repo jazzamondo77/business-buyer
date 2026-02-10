@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experienced Operator Seeking Business Acquisition | Sydney</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --cream: #faf8f5;
+    --warm: #c4956a;
+    --warm-light: #e8d5c4;
+    --warm-dark: #9e7553;
+    --sage: #7a8f7a;
+    --text: #3d3d4e;
+    --text-light: #6b6b7b;
+    --border: #e2ddd7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 70%, rgba(196,149,106,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(122,143,122,0.1) 0%, transparent 50%);
+    animation: drift 20s ease-in-out infinite;
+  }
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-3%, 2%); }
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 span { color: var(--warm); }
+  .hero p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* Badge */
+  .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.03em;
+  }
+
+  /* Section */
+  .section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .section + .section { padding-top: 0; }
+
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--warm-dark);
+    margin-bottom: 12px;
+  }
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .section p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+  }
+
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  @media (max-width: 520px) { .card-grid { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .card-icon.green { background: rgba(122,143,122,0.15); }
+  .card-icon.warm { background: rgba(196,149,106,0.15); }
+  .card h3 {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .card p { font-size: 0.84rem; color: var(--text-light); margin: 0; }
+
+  /* Divider */
+  .divider {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .divider hr {
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Criteria list */
+  .criteria {
+    list-style: none;
+    margin-top: 20px;
+  }
+  .criteria li {
+    position: relative;
+    padding: 10px 0 10px 28px;
+    font-size: 0.92rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+  .criteria li:last-child { border-bottom: none; }
+  .criteria li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--sage);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  /* CTA */
+  .cta-box {
+    background: var(--ink);
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    color: #fff;
+    margin-top: 32px;
+  }
+  .cta-box h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .cta-box p {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-email {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .cta-email:hover {
+    background: var(--warm-dark);
+    transform: translateY(-1px);
+  }
+  .cta-details {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* Info wanted */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  @media (max-width: 520px) { .info-grid { grid-template-columns: 1fr; } }
+  .info-item {
+    background: rgba(196,149,106,0.08);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 0.85rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.78rem;
+    color: var(--text-light);
+  }
+
+  /* Fade in */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.6s ease forwards;
+  }
+  .fade-in:nth-child(2) { animation-delay: 0.1s; }
+  .fade-in:nth-child(3) { animation-delay: 0.2s; }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-content fade-in">
+    <h1>Experienced Operator <span>Seeking a Business</span> to Acquire</h1>
+    <p style="font-size:1.15rem;color:rgba(255,255,255,0.9);margin-bottom:6px;font-weight:500;">Jarrod Egan</p>
+    <p>Private buyer with 20+ years of operational and business ownership experience, looking to acquire a well-run Sydney-based business directly from the owner.</p>
+    <div class="badge-row">
+      <span class="badge">Private Buyer</span>
+      <span class="badge">No Brokers</span>
+      <span class="badge">Sydney Based</span>
+      <span class="badge">Serious Enquiries</span>
+    </div>
+  </div>
+</div>
+
+<div class="section fade-in">
+  <span class="section-label">About Me</span>
+  <h2>Why deal directly with me?</h2>
+  <p>I'm a Sydney-based professional with over two decades of experience running teams and operations at elite organisations, plus hands-on business ownership across multiple ventures. I'm not a tyre-kicker — I'm actively looking to acquire a business and have the experience, resources, and intent to move quickly for the right opportunity.</p>
+  <p>Dealing directly with me means no broker fees eating into your sale price, a straightforward and respectful process, and someone who understands what it takes to run a business day-to-day.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon green">🏢</div>
+      <h3>20+ Years Operations</h3>
+      <p>Senior management experience running large teams and complex programs across multiple industries.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon warm">📈</div>
+      <h3>Business Owner</h3>
+      <p>Current and former owner of multiple businesses — I understand the realities of P&Ls, staff, and growth.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">🤝</div>
+      <h3>Direct & Discreet</h3>
+      <p>No brokers, no middlemen. A confidential, respectful conversation between you and me.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon warm">⚡</div>
+      <h3>Ready to Move</h3>
+      <p>Finance is in order. When the right business comes along, I can move quickly through due diligence to settlement.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<div class="section fade-in">
+  <span class="section-label">What I'm Looking For</span>
+  <h2>Acquisition criteria</h2>
+  <p>I'm looking for a specific type of business. If yours ticks most of these boxes, I'd love to hear from you.</p>
+
+  <ul class="criteria">
+    <li><strong>Profitable</strong> — the business must be generating genuine, provable profit (minimum ~$150k/year net)</li>
+    <li><strong>Under management</strong> — already runs with a manager/team in place, or can be transitioned to that model without major disruption</li>
+    <li><strong>Sydney or nearby</strong> — based in Greater Sydney or within a reasonable distance</li>
+    <li><strong>Motivated seller</strong> — you have a genuine reason to sell (retirement, relocation, health, new venture, etc.)</li>
+    <li><strong>Not a franchise</strong> — I'm looking for independent businesses only</li>
+    <li><strong>Not listed with a broker</strong> — I want to deal owner-to-owner and save us both the commission</li>
+    <li><strong>Not hospitality/cafés/gyms</strong> — open to most other industries and service-based businesses</li>
+  </ul>
+</div>
+
+<div class="divider"><hr></div>
+
+<div class="section fade-in">
+  <span class="section-label">Get in Touch</span>
+  <h2>Interested? Here's what to send me</h2>
+  <p>If your business fits the criteria above and you're considering selling, I'd love to hear from you. To get the conversation started, please send me a brief overview including:</p>
+
+  <div class="info-grid">
+    <div class="info-item">📋 Type of business / industry</div>
+    <div class="info-item">📍 Location</div>
+    <div class="info-item">💰 Approximate annual revenue & profit</div>
+    <div class="info-item">👥 Number of staff</div>
+    <div class="info-item">🔧 Is it currently under management?</div>
+    <div class="info-item">📝 Why you're looking to sell</div>
+    <div class="info-item">💲 Asking price or price expectation</div>
+    <div class="info-item">📅 How long you've owned the business</div>
+  </div>
+
+  <div class="cta-box">
+    <h2>Ready to start a conversation?</h2>
+    <p>Everything is completely confidential. No pressure, no obligation — just a straightforward chat about whether it could be a good fit for both of us.</p>
+    <a href="mailto:jarrodegan@gmail.com?subject=Business%20For%20Sale%20-%20Private%20Enquiry&body=Hi%20Jarrod%2C%0A%0AI%20saw%20your%20post%20about%20looking%20to%20acquire%20a%20business.%20Here%20are%20some%20details%20about%20mine%3A%0A%0ABusiness%20type%3A%20%0ALocation%3A%20%0AApprox.%20annual%20revenue%3A%20%0AApprox.%20annual%20profit%3A%20%0ANumber%20of%20staff%3A%20%0ACurrently%20under%20management%3F%20%0AReason%20for%20selling%3A%20%0AAsking%20price%3A%20%0AYears%20owned%3A%20%0A%0AThanks" class="cta-email">Email Jarrod Directly</a>
+  </div>
+</div>
+
+<footer>
+  Private buyer — Jarrod Egan &nbsp;·&nbsp; Sydney, Australia &nbsp;·&nbsp; All enquiries treated in strict confidence
+</footer>
+
+</body>
+</html>
